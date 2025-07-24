@@ -4,6 +4,7 @@ from langchain_core.tools import Tool
 conn = sqlite3.connect("db/db.sqlite")
 
 
+
 def run_sqlite_query(query: str) -> str:
     c = conn.cursor()
     c.execute(query)
